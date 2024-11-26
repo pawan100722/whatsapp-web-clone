@@ -11,10 +11,12 @@ export const OtherMenuOptions=()=>{
   return (
     <div className="other-menu-options-container">
       <div className="main-icons-container">
-        <div className="icon chats-icon">
-          <ChatIcon />
-        </div>
-        <span className="tooltip chats-tooltip">Chats</span>
+        {/* <div className="icon-container"> */}
+          <div className="icon chats-icon">
+            <ChatIcon />
+          </div>
+          <span className="tooltip chats-tooltip">Chats</span>
+        {/* </div> */}
         <div className="icon status-icon">
           <StatusIcon />
         </div>

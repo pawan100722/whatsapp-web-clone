@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items:center;
-  gap:25px;
+  row-gap:25px;
 }
 
 .chats-icon{
@@ -35,7 +35,7 @@
 .tooltip{
   border-radius: 20px;
   position:absolute ;
-  left: 85px;
+  left:5%;
   background-color: white;
   padding:2px 8px 2px 8px;
   opacity: 0;
@@ -44,24 +44,39 @@
 }
 
 .chats-tooltip{
-  top:10px;
+  top:25px;
+  /* left: 85px; */
 }
 
 .status-tooltip{
-  top:52px;
+  top:67px;
+  /* left: 85px; */
+
 }
 
 .channels-tooltip{
-  top:98px;
+  top:118px;
+  /* left: 85px; */
+
 }
 
 .communities-tooltip{
-  top:150px;
+  top:165px;
+  /* left: 85px; */
+
+}
+
+.settings-tooltip{
+  bottom: 256px;
+  /* left: 85px; */
 }
 
 .profile-tooltip{
-  top: 575px;
+  bottom: 204px;
+  /* left: 85px; */
 }
+
+
 
 .chats-icon:hover+.chats-tooltip{
   opacity: 1;
@@ -86,3 +101,7 @@
 .profile-icon:hover+.profile-tooltip{
   opacity: 1;
 }
+
+/* .icon-container{
+  display :flex;
+} */

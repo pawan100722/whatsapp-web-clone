@@ -1,0 +1,11 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.main-component-container{
+  /* width:100dvw; */
+  height:100dvh;
+  /* background-color: rgb(194, 40, 40); */
+  display:flex;
+}

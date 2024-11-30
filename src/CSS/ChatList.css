@@ -3,3 +3,42 @@
   width: 30%;
   background-color: #061917;
 }
+
+.header-container{
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  color:white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon{
+  width: 25px;
+  color:#f4f4f4;
+  cursor: pointer;
+}
+
+.heading{
+  flex-basis: 70%;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.heading h1{
+  font-size: 25px;
+}
+
+.new-chat{
+  transform: rotate(180deg);
+  align-self: stretch;
+}
+
+.menu{
+  align-self: baseline;
+  display: flex;
+  align-items: end;
+  align-self: stretch;
+}
+
+

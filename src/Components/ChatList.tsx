@@ -2,19 +2,34 @@ import React from 'react';
 import '../CSS/ChatList.css';
 import  NewChatIcon  from '../Icons/NewChatIcon.tsx';
 import MenuIcon from '../Icons/MenuIcon.tsx';
+import SearchIcon from '../Icons/SearchIcon.tsx'
 
 export const ChatList=()=>{
-  return <div className='chat-list-container'>
-    <div className="header-container">
-      <div className="heading">
-        <h1>Chats</h1>
+  return (
+    <div className="chat-list-container">
+      <div className="header-container">
+        <div className="heading">
+          <h1>Chats</h1>
+        </div>
+        <div className="new-chat icon">
+          <NewChatIcon />
+        </div>
+        <div className="menu icon">
+          <MenuIcon />
+        </div>
       </div>
-      <div className="new-chat icon">
-        <NewChatIcon/>
+      <div className="search-container">
+        <div className="search-icon icon">
+          <SearchIcon />
+        </div>
+        <input type="text" className="search-box" />
       </div>
-      <div className="menu icon">
-        <MenuIcon/>
+      <div className="label-container">
+        <div className="label-all label">All</div>
+        <div className="label-unread label">Unread</div>
+        <div className="label-favorite label">Favorite</div>
+        <div className="label-groups label">Groups</div>
       </div>
     </div>
-  </div>
+  );
 }

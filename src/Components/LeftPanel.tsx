@@ -3,8 +3,10 @@ import '../CSS/ChatList.css';
 import  NewChatIcon  from '../Icons/NewChatIcon.tsx';
 import MenuIcon from '../Icons/MenuIcon.tsx';
 import SearchIcon from '../Icons/SearchIcon.tsx'
+import { ChatListDetail } from './ChatListDetail.tsx';
+import { ChatListDetailDTO } from '../DTOS/ChatDTO.ts';
 
-export const ChatList=()=>{
+export const LeftPanel=({users}: {users:ChatListDetailDTO[]})=>{
   return (
     <div className="chat-list-container">
       <div className="header-container">
@@ -29,6 +31,10 @@ export const ChatList=()=>{
         <div className="label-unread label">Unread</div>
         <div className="label-favorite label">Favorite</div>
         <div className="label-groups label">Groups</div>
+      </div>
+
+      <div className='all-chat-list-detail-container'>
+        {users.map(user=><ChatListDetail key={user?.userId} user={user}/>)}
       </div>
     </div>
   );

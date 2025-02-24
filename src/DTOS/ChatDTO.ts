@@ -25,7 +25,7 @@ export interface ChatListDetailDTO {
   messages: MessageDTO[];
 }
 
-interface MessageDTO {
+export interface MessageDTO {
   messageId:string;
   message:string;
   sentDate:string;

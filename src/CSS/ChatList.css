@@ -110,8 +110,8 @@
 .chat-list-detail{
   width: 80%;
   color:white;
-  padding: 20px;
-  border-top: 1px solid gray;
+  padding: 25px;
+  border-top: 1px solid #000a09;
   /* border-bottom: 1px solid gray; */
 }
 
@@ -125,14 +125,16 @@
 }
 
 .chat-list-display-message{
-  margin-top: 10px;
+  margin-top: 23px;
+  font-weight: 100;
 }
 
 .all-chat-list-detail-container{
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 76dvh;
-  position: relative;
+  /*position: relative;
   top: 30px;
+  padding-top: 50px; */
 }
 
 

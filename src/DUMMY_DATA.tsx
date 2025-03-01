@@ -1,3 +1,5 @@
+import { CONSTANT } from "./CONSTANTS.ts";
+
 export const DUMMY_DATA = {
   app: "WhatsApp",
   version: "2.22.10.72",
@@ -619,7 +621,7 @@ export const DUMMY_DATA = {
           messageId: "msg-102",
           message: "Thanks!",
           sentDate: "2023-10-17T12:09:00",
-          status: "Not Delivered",
+          status: CONSTANT.STATUS_MESSAGE_UNREAD,
           isMessageSent: false,
         },
       ],
@@ -723,7 +725,7 @@ export const DUMMY_DATA = {
           messageId: "msg-114",
           message: "I won't!",
           sentDate: "2023-10-19T09:09:00",
-          status: "Not Delivered",
+          status: CONSTANT.STATUS_MESSAGE_UNREAD,
           isMessageSent: false,
         },
       ],

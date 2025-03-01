@@ -17,9 +17,9 @@
 }
 
 .chat-box{
-  width: fit-content;
+  /* width: fit-content; */
   border: 1px solid black;
-  padding: 30px;
+  padding: 20px;
   border-radius: 40px;
   margin: 20px;
 }
@@ -50,4 +50,9 @@ justify-content: flex-end;
 
 .chat-input:focus{
   outline: none;
+}
+
+.unread-message{
+  font-weight: bolder;
+  /* color: red */
 }

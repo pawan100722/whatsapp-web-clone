@@ -1,15 +1,16 @@
 .chat-detail-container{
   height: 100%;
-  width: 65%;
+  width: 100%;
   background-image: url('../Images/chat_background.jpg');
   background-size: contain;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
 .all-chat-container{
+height: 70dvh;
+overflow-y: auto;
   
 }
 

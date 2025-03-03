@@ -5,8 +5,8 @@ import { ChatContext } from './MainComponent.tsx';
 
 export const RightPanel=()=>{
   const context = useContext(ChatContext);
-  const {selectedChat}=context;
+  const {isChatSelected}=context;
   return <>
-     {!selectedChat.length?<ChatDetailsHomepage/>:<ChatDetail/>}
+     {!isChatSelected?<ChatDetailsHomepage/>:<ChatDetail/>}
   </>
 }

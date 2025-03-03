@@ -26,6 +26,11 @@ export const ChatDetail = () => {
                   message.isMessageSent ? `chat-right` : `chat-left `
                 }`}
               >
+                {!message.isMessageSent ? (
+                  <span className="chat-left-arrow"></span>
+                ) : (
+                  ""
+                )}
                 <p
                   className={`chat-box ${
                     message.isMessageSent ? `sent-message` : `received-message`
@@ -33,6 +38,11 @@ export const ChatDetail = () => {
                 >
                   {message.message}
                 </p>
+                {message.isMessageSent ? (
+                  <span className="chat-right-arrow"></span>
+                ) : (
+                  ""
+                )}
               </div>
             );
           })}

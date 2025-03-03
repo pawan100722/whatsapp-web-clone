@@ -86,10 +86,9 @@
 .chat-list-detail-container{
   display:flex;
   align-items: center;
-  background-color: #03453e;
+  background-color: #022420 ;
   cursor: pointer;
   padding: 5px;
-  /* width: 100%; */
   height: 100px;
 
 }
@@ -97,7 +96,7 @@
 
 
 .chat-list-detail-container:hover{
-  background-color: #000a09;
+  background-color:  #03453e;
 }
 
 
@@ -110,14 +109,12 @@
 .chat-list-detail{
   width: 80%;
   color:white;
-  padding: 25px;
+  padding: 20px;
   border-top: 1px solid #000a09;
-  /* border-bottom: 1px solid gray; */
 }
 
 .chat-list-detail-container:hover > .chat-list-detail{
   border-top: none;
-  /* border-bottom: none; */
 }
 
 .chat-list-detail h1{
@@ -132,9 +129,6 @@
 .all-chat-list-detail-container{
   overflow-y: auto;
   max-height: 76dvh;
-  /*position: relative;
-  top: 30px;
-  padding-top: 50px; */
 }
 
 

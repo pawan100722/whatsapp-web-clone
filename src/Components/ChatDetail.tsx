@@ -6,6 +6,7 @@ import { PlusIcon } from "../Icons/PlusIcon.tsx";
 import { MicIcon } from "../Icons/MicIcon.tsx";
 import { EmojiIcon } from "../Icons/EmojiIcon.tsx";
 import { CONSTANT } from "../CONSTANTS.ts";
+import { ChatDetailHeader } from "./ChatDetailHeader.tsx";
 
 export const ChatDetail = () => {
   const emptyChat: MessageDTO={
@@ -39,7 +40,9 @@ export const ChatDetail = () => {
 
   return (
     <div className="chat-detail-container">
-      <div className="chat-detail-header"></div>
+      <div className="chat-detail-header">
+        <ChatDetailHeader/>
+      </div>
       <div className="all-chat-container">
         {selectedChat
           ?.slice()

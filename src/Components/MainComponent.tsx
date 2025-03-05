@@ -20,6 +20,7 @@ export const MainComponent = () => {
   const [users, setUsers] = useState(DUMMY_DATA.users);
   const [selectedChat, setSelectedChat] = useState<MessageDTO[]>([]);
   const [progressConversion, setProgressConversation] = useState<MessageDTO>(emptyMessage);
+  const [selectedUser, setSelectedUser]= useState<any>({})
 
   const handleSelectedChat = (chat: MessageDTO[]) => {
     setIsChatSelected(true);
@@ -35,7 +36,7 @@ export const MainComponent = () => {
     <div className="main-component-container">
       <OtherMenuOptions />
       <ChatContext.Provider
-        value={{isChatSelected, selectedChat, handleSelectedChat, setProgressConversation }}
+        value={{isChatSelected, selectedChat, handleSelectedChat, setProgressConversation, selectedUser, setSelectedUser }}
       >
         <LeftPanel users={users} />
         <RightPanel />

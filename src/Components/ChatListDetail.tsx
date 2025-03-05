@@ -7,7 +7,7 @@ import { CONSTANT } from '../CONSTANTS.ts';
 export const ChatListDetail=({user}: {user:ChatListDetailDTO})=>{
 
   const context = useContext(ChatContext);
-  const { handleSelectedChat } = context;
+  const { handleSelectedChat, setSelectedUser } = context;
 
   const {userId,name, phoneNumber, profilePic,status, messages} = user;
 
@@ -16,6 +16,7 @@ export const ChatListDetail=({user}: {user:ChatListDetailDTO})=>{
       className="chat-list-detail-container"
       onClick={(e) => {
         handleSelectedChat(user?.messages);
+        setSelectedUser(user);
       }}
     >
       <img

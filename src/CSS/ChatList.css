@@ -89,8 +89,7 @@
   background-color: #022420 ;
   cursor: pointer;
   padding: 5px;
-  height: 100px;
-
+  height: 70px;
 }
 
 
@@ -109,7 +108,7 @@
 .chat-list-detail{
   width: 80%;
   color:white;
-  padding: 20px;
+  padding: 5px;
   border-top: 1px solid #000a09;
 }
 
@@ -122,7 +121,7 @@
 }
 
 .chat-list-display-message{
-  margin-top: 23px;
+  margin-top: 20px;
   font-weight: 100;
 }
 

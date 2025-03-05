@@ -1,6 +1,14 @@
 *{
   margin:0;
   padding:0;
+
+--active-tab-marker: #00a884;
+--active-tab-marker-rgb: 0, 168, 132;
+--app-background: #0c1317;
+--app-background-rgb: 12, 19, 23;
+--app-background-deeper: #0a1014;
+--app-background-deeper-rgb: rgb(10, 16, 20);
+--app-background-stripe: rgba(0, 0, 0, 0);
 }
 
 .main-component-container{
@@ -9,3 +17,4 @@
   /* background-color: rgb(194, 40, 40); */
   display:flex;
 }
+

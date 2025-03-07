@@ -95,7 +95,8 @@
 
 
 .chat-list-detail-container:hover{
-  background-color:  #03453e;
+  /* background-color:  #03453e; */
+  background-color: black;
 }
 
 

@@ -25,7 +25,7 @@ export const ChatDetailHeader = ()=>{
       </div>
       <div className={`${classPrefix}-right-content`}>
         <div className={`${classPrefix}-icons-container`}>
-          {/* <span className={`${classPrefix}-icon`}><VideoCameraIcon/></span> */}
+          <span className={`${classPrefix}-icon`}><VideoCameraIcon/></span>
           <div className={`${classPrefix}-icon`}><SearchIcon/></div>
           <div className={`${classPrefix}-icon`}><MenuIcon/></div>
         </div>

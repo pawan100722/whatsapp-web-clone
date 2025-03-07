@@ -33,8 +33,8 @@ export const ChatDetail = () => {
 
   const handleKeyDown=(e)=>{
     if(e.key==='Enter'){
-      setProgressConversation(chatMessage)
-      setChatMessage(emptyChat)
+      setProgressConversation(chatMessage);
+      setChatMessage(emptyChat);
     }
   }
 

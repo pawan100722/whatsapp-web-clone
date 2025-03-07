@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { SVGProps } from 'react';
 
-export const VideoCameraIcon=()=>{
+
+export function VideoCameraIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       // xmlns="http://www.w3.org/2000/svg"
-      // x="0px"
-      // y="0px"
-      // width="100"
-      // height="100"
-      viewBox="0 0 50 50"
+      viewBox="0 0 24 24"
+      // width="1em"
+      // height="1em"
+      // {...props}
     >
-      <path d="M45,4H5C4.447,4,4,4.448,4,5v40c0,0.552,0.447,1,1,1h40c0.553,0,1-0.448,1-1V5C46,4.448,45.553,4,45,4z M29,26.445h-5V42h-4	V26.445h-5V23h14V26.445z M30.121,41.112v-4.158c0,0,2.271,1.712,4.996,1.712c2.725,0,2.62-1.782,2.62-2.026	c0-2.586-7.721-2.586-7.721-8.315c0-7.791,11.25-4.717,11.25-4.717l-0.14,3.704c0,0-1.887-1.258-4.018-1.258s-2.9,1.013-2.9,2.096	c0,2.795,7.791,2.516,7.791,8.141C42,44.955,30.121,41.112,30.121,41.112z"></path>
+      <path
+        fill="currentColor"
+        d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l2.29 2.29c.63.63 1.71.18 1.71-.71V8.91c0-.89-1.08-1.34-1.71-.71z"
+      ></path>
     </svg>
   );
 }

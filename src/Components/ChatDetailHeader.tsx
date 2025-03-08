@@ -10,7 +10,6 @@ export const ChatDetailHeader = ()=>{
   const classPrefix = "chat-detail-header";
   const chatContext = useContext(ChatContext);
   const {selectedUser} = chatContext;
-  console.log('Selected USER ChatListDetail.tsx:', selectedUser);
   
   return (
     <div className={`${classPrefix}-container`}>

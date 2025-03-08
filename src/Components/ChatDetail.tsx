@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { MessageDTO } from "../DTOS/ChatDTO";
 import { ChatContext } from "./MainComponent.tsx";
 import "../CSS/ChatDetails.css";
@@ -9,51 +9,70 @@ import { CONSTANT } from "../CONSTANTS.ts";
 import { ChatDetailHeader } from "./ChatDetailHeader.tsx";
 
 export const ChatDetail = () => {
-  const emptyChat: MessageDTO={
-    messageId:'',
-    message:'',
+  const chatRef = useRef<any>(null);
+
+  const emptyChat: MessageDTO = {
+    messageId: "",
+    message: "",
     isMessageSent: true,
-    sentDate:'',
-    status:''
-  }
+    sentDate: "",
+    status: "",
+  };
+
   const context = useContext(ChatContext);
   const { selectedChat, setProgressConversation } = context;
-  const [chatMessage, setChatMessage] = useState<MessageDTO>(emptyChat)
+  const [chatMessage, setChatMessage] = useState<MessageDTO>(emptyChat);
 
   const handleMessage = (e) => {
     const message: MessageDTO = {
-      messageId: `msg-${Math.floor(Math.random()) * 100000}`,
+      messageId: `msg-${Math.floor(Math.random() * 100000)}`,
       message: e.target.value,
       sentDate: new Date().toISOString(),
       status: CONSTANT.STATUS_MESSAGE_SENT,
       isMessageSent: true,
     };
-  setChatMessage(message);
+    setChatMessage(message);
   };
 
-  const handleKeyDown=(e)=>{
-    if(e.key==='Enter'){
+  const scrollToBottom = () => {
+    if (chatRef.current) {
+      chatRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+      });
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
       setProgressConversation(chatMessage);
       setChatMessage(emptyChat);
     }
-  }
+  };
+
+  // Use useEffect to scroll to the bottom whenever selectedChat changes
+  useEffect(() => {
+    scrollToBottom();
+  }, [selectedChat]);
 
   return (
     <div className="chat-detail-container">
       <div className="chat-detail-header">
-        <ChatDetailHeader/>
+        <ChatDetailHeader />
       </div>
       <div className="all-chat-container">
         {selectedChat
           ?.slice()
           ?.reverse()
           ?.map((message: MessageDTO, index: number) => {
+            const isLastMessage = index === selectedChat.length - 1;
             return (
               <div
                 key={index}
                 className={`chat-container ${
-                  message.isMessageSent ? `chat-right` : `chat-left `
+                  message.isMessageSent ? `chat-right` : `chat-left`
                 }`}
+                ref={isLastMessage ? chatRef : null}
               >
                 {!message.isMessageSent ? (
                   <span className="chat-left-arrow"></span>

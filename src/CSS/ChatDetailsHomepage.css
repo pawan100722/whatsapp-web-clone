@@ -1,0 +1,70 @@
+.chat-details-homepage-container {
+  background-color: #022420;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-image {
+}
+
+.main-text h1 {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  font-weight: 300;
+}
+
+.sub-text {
+  color: white;
+  width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .sub-text {
+    width: 300px;
+  }
+}
+
+.microsoft-store-button {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.microsoft-store-button button {
+  color: dark;
+  width: 250px;
+  height: 35px;
+  border-radius: 15px;
+  font-size: 1rem;
+  background-color: #25d366;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0 10px 0;
+}
+
+.encryption-message {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .encryption-message {
+    width: 270px;
+  }
+}
+
+.encryption-message div {
+  width: 15px;
+  padding: 10px;
+}

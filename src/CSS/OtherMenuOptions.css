@@ -1,0 +1,111 @@
+.other-menu-options-container{
+  height: 100%;
+  width:5%;
+  background-color: #022420	;
+}
+
+.icon{
+  width: 25px;
+  color:#f4f4f4;
+  cursor: pointer;
+}
+
+.main-icons-container{
+  height: 65%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+}
+
+@media(max-width: 600px){
+  .other-menu-options-container{
+    display: none;
+  }
+}
+
+.other-icons-container{
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  row-gap:25px;
+}
+
+.chats-icon{
+  transform: rotate(180deg);
+  padding-bottom: 20px;
+}
+
+.tooltip{
+  border-radius: 20px;
+  position:absolute ;
+  left:5%;
+  background-color: white;
+  padding:2px 8px 2px 8px;
+  opacity: 0;
+  transition: opacity;
+  transition-duration: 0.2s;
+}
+
+.chats-tooltip{
+  top:25px;
+  /* left: 85px; */
+}
+
+.status-tooltip{
+  top:67px;
+  /* left: 85px; */
+
+}
+
+.channels-tooltip{
+  top:118px;
+  /* left: 85px; */
+
+}
+
+.communities-tooltip{
+  top:165px;
+  /* left: 85px; */
+
+}
+
+.settings-tooltip{
+  bottom: 228px;
+}
+
+.profile-tooltip{
+  bottom: 177px;
+}
+
+
+
+.chats-icon:hover+.chats-tooltip{
+  opacity: 1;
+}
+
+.status-icon:hover+.status-tooltip{
+  opacity: 1;
+}
+
+.channels-icon:hover+.channels-tooltip{
+  opacity: 1;
+}
+
+.communities-icon:hover+.communities-tooltip{
+  opacity: 1;
+}
+
+.settings-icon:hover+.settings-tooltip{
+  opacity: 1;
+}
+
+.profile-icon:hover+.profile-tooltip{
+  opacity: 1;
+}
+
+/* .icon-container{
+  display :flex;
+} */

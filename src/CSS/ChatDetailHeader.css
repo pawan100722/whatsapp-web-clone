@@ -1,0 +1,48 @@
+.chat-detail-header-container{
+  width: 93%;
+  height:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.chat-detail-header-left-content{
+  display: flex;
+  align-items: center;
+  height:100%;
+  margin-left: 20px;
+  column-gap: 10px;
+}
+
+.chat-detail-header-profile-pic{
+  width: 60px;
+  border-radius: 50%;
+}
+
+.chat-detail-header-user-name{
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+.chat-detail-header-icons-container{
+  color: white;
+  margin-right: 400px;
+  display: flex;
+  gap: 20px;
+}
+
+
+@media(max-width: 600px){
+  .chat-detail-header-icons-container{
+    margin-right: 0;
+  }
+}
+
+.chat-detail-header-icon{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  color: white;
+}

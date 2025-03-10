@@ -1,4 +1,3 @@
-import React from 'react';
 import '../CSS/ChatList.css';
 import  NewChatIcon  from '../Icons/NewChatIcon.tsx';
 import MenuIcon from '../Icons/MenuIcon.tsx';

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import  { useContext, useEffect, useRef, useState } from "react";
 import { MessageDTO } from "../DTOS/ChatDTO";
 import { ChatContext } from "./MainComponent.tsx";
 import "../CSS/ChatDetails.css";
@@ -23,7 +23,7 @@ export const ChatDetail = () => {
   const { selectedChat, setProgressConversation } = context;
   const [chatMessage, setChatMessage] = useState<MessageDTO>(emptyChat);
 
-  const handleMessage = (e) => {
+  const handleMessage = (e:any) => {
     const message: MessageDTO = {
       messageId: `msg-${Math.floor(Math.random() * 100000)}`,
       message: e.target.value,
@@ -43,7 +43,7 @@ export const ChatDetail = () => {
     }
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e:any) => {
     if (e.key === "Enter" && chatMessage?.message) {
       setProgressConversation(chatMessage);
       setChatMessage(emptyChat);
@@ -100,7 +100,7 @@ export const ChatDetail = () => {
           </div>
           <div
             className="chat-detail-input-container"
-            onKeyDown={(e) => {
+            onKeyDown={(e:any) => {
               handleKeyDown(e);
             }}
           >

@@ -1,6 +1,4 @@
-import * as React from "react";
-
-function CommunityIcon(props) {
+function CommunityIcon(props: any) {
   return (
     <svg
       viewBox="0 0 24 24"

@@ -1,5 +1,5 @@
 
-import React, { SVGProps } from "react";
+import { SVGProps } from "react";
 
 export function EmojiIcon(props: SVGProps<SVGSVGElement>) {
   return (
@@ -8,7 +8,7 @@ export function EmojiIcon(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 14 14"
       // width="1em"
       // height="1em"
-      // {...props}
+      {...props}
     >
       <g
         fill="none"

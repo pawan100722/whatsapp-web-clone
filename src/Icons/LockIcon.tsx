@@ -1,6 +1,4 @@
-import * as React from "react";
-
-function LockIcon(props) {
+function LockIcon(props: any) {
   return (
     <svg
       viewBox="0 0 24 24"

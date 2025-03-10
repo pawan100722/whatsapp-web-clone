@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { ChatDetailsHomepage } from './ChatDetailsHomepage.tsx';
 import { ChatDetail } from './ChatDetail.tsx';
 import { ChatContext } from './MainComponent.tsx';

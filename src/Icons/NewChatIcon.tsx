@@ -1,6 +1,4 @@
-import * as React from "react";
-
-function NewChatIcon(props) {
+function NewChatIcon(props: any) {
   return (
     <svg
       viewBox="0 0 24 24"

@@ -1,4 +1,3 @@
-import React from 'react';
 import '../CSS/OtherMenuOptions.css';
 import  ChatIcon  from '../Icons/ChatIcon.tsx';
 import StatusIcon from '../Icons/StatusIcon.tsx';

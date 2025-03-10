@@ -1,6 +1,4 @@
-import * as React from "react";
-
-function StatusIcon(props) {
+function StatusIcon(props: any) {
   return (
     <svg
       viewBox="0 0 1024 1024"

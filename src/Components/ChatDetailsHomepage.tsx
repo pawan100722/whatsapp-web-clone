@@ -1,4 +1,3 @@
-import React from 'react';
 import '../CSS/ChatDetailsHomepage.css';
 import LockIcon from '../Icons/LockIcon.tsx';
 import WhatsappImage from '../Images/chat_details_homepage.png';
@@ -8,7 +7,6 @@ export const ChatDetailsHomepage=()=>{
     <div className="chat-details-homepage-container">
       <div className="whatsapp-image">
         <img
-          // src="https://cdn.pixabay.com/photo/2022/01/21/00/35/whatsapp-icon-6953523_960_720.jpg"
           src={WhatsappImage}
           alt="whatsapp-image"
           width={"320"}

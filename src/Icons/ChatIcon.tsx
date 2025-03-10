@@ -1,6 +1,5 @@
-import * as React from "react";
 
-function ChatIcon(props) {
+function ChatIcon(props: any) {
   return (
     <svg
       fill="currentColor"

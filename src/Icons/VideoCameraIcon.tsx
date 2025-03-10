@@ -1,5 +1,4 @@
-import React, { SVGProps } from 'react';
-
+import  { SVGProps } from 'react';
 
 export function VideoCameraIcon(props: SVGProps<SVGSVGElement>) {
   return (
@@ -8,7 +7,7 @@ export function VideoCameraIcon(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 24 24"
       // width="1em"
       // height="1em"
-      // {...props}
+      {...props}
     >
       <path
         fill="currentColor"

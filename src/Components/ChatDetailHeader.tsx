@@ -1,9 +1,8 @@
-import React, { useContext } from 'react';
+import  { useContext } from 'react';
 import { ChatContext } from './MainComponent.tsx';
 import '../CSS/ChatDetailHeader.css';
 import { VideoCameraIcon } from '../Icons/VideoCameraIcon.tsx';
 import SearchIcon from '../Icons/SearchIcon.tsx';
-import SettingsIcon from '../Icons/SettingsIcon.tsx';
 import MenuIcon from '../Icons/MenuIcon.tsx';
 
 export const ChatDetailHeader = ()=>{

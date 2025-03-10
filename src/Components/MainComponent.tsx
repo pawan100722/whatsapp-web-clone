@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from "react";
+import  { createContext, useEffect, useState } from "react";
 import "../CSS/MainComponent.css";
 import { OtherMenuOptions } from "../Components/OtherMenuOptions.tsx";
 import { LeftPanel } from "./LeftPanel.tsx";
@@ -17,7 +17,7 @@ export const MainComponent = () => {
     isMessageSent: true,
   };
   const [isChatSelected, setIsChatSelected] = useState<boolean>(false)
-  const [users, setUsers] = useState(DUMMY_DATA.users);
+  const [users] = useState(DUMMY_DATA.users);
   const [selectedChat, setSelectedChat] = useState<MessageDTO[]>([]);
   const [progressConversion, setProgressConversation] = useState<MessageDTO>(emptyMessage);
   const [selectedUser, setSelectedUser]= useState<any>({})

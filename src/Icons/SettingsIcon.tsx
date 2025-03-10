@@ -1,7 +1,4 @@
-// icon:settings | Ionicons https://ionicons.com/ | Ionic Framework
-import * as React from "react";
-
-function SettingsIcon(props) {
+function SettingsIcon(props: any) {
   return (
     <svg
       viewBox="0 0 512 512"

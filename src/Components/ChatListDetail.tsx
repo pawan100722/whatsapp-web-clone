@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import {ChatListDetailDTO} from '../DTOS/ChatDTO';
 import '../CSS/ChatList.css'
 import { ChatContext } from './MainComponent.tsx';
@@ -9,12 +9,12 @@ export const ChatListDetail=({user}: {user:ChatListDetailDTO})=>{
   const context = useContext(ChatContext);
   const { handleSelectedChat, setSelectedUser } = context;
 
-  const {userId,name, phoneNumber, profilePic,status, messages} = user;
+  const {name,  profilePic, messages} = user;
 
   return (
     <div
       className="chat-list-detail-container"
-      onClick={(e) => {
+      onClick={() => {
         handleSelectedChat(user?.messages);
         setSelectedUser(user);
       }}
